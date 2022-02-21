@@ -12,7 +12,7 @@
             <h2>{{$item->Numero_carrozze}}</h2>
             <h2>{{$item->In_orario}}</h2>
             <h2>{{$item->Cancellato}}</h2>
+            <a href="{{route('Trains.show', $item)}}">Train</a>
         </div>
     @endforeach    
-
 @endsection
