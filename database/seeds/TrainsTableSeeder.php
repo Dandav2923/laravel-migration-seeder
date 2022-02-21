@@ -1,5 +1,6 @@
 <?php
 
+use App\Train;
 use Illuminate\Database\Seeder;
 use App\Trains;
 use Faker\Generator as Faker;
@@ -13,7 +14,7 @@ class TrainsTableSeeder extends Seeder
     public function run(Faker $faker)
     {
         for ($i=0; $i < 10 ; $i++) {
-            $newTrain = new Trains();
+            $newTrain = new Train();
             $newTrain->Azienda = $faker->words(4, true);
             $newTrain->Stazione_di_partenza = $faker->words(7, true);
             $newTrain->Stazione_di_arrivo = $faker->words(7, true);
