@@ -13,9 +13,9 @@ class PageController extends Controller
         $data = ['trains' => $trains];
         return view('Trains.home', $data);
     }
-    public function show(Train $trains) {
-        // $trains = Trains::all();
-        dd($trains);
-        return view('Trains.show', ['trains' => $trains]);
+    public function show(Train $train) {
+        // $train = Train::all();
+        // dd($train);
+        return view('Trains.show', ['train' => $train]);
     }
 }
